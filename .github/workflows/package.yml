@@ -15,8 +15,13 @@ jobs:
       
       - name: Download binaries
         run: |
-          bash download.sh
+          bash scripts/download.sh
           ls 
           tree -L 2 .
+
+      - name: Test in docker
+        run: |
+          bash scripts/docker_run.sh
+
           
           
