@@ -36,6 +36,7 @@ jobs:
           path: mordern_unix_tools.tar.gz
 
       - uses: ncipollo/release-action@v1
+        if: ${{ startsWith(github.ref, 'refs/tags/') }}
         with:
           artifacts: "*.tar.gz"
           bodyFile: "body.md"
