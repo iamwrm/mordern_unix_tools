@@ -32,5 +32,12 @@ jobs:
           name: bin_package
           path: mordern_unix_tools.tar.gz
 
+      - name: Release
+        uses: fnkr/github-action-ghr@v1
+        env:
+          GHR_COMPRESS: gz
+          GHR_PATH: bin/
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
           
           
