@@ -25,7 +25,7 @@ jobs:
 
       - name: package
         run: |
-          tar xvf mordern_unix_tools.tar.gz ./bin
+          tar cvzf mordern_unix_tools.tar.gz ./bin
 
       - uses: actions/upload-artifact@v2
         with:
