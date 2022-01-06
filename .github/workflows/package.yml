@@ -41,7 +41,7 @@ jobs:
           prerelease: true
           title: "Development Build"
           files: |
-            *.tar.gz
+            mordern*.tar.gz
 
           
           
