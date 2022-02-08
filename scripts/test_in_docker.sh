@@ -3,6 +3,8 @@ pwd
 
 cat /etc/*release
 
-bin/exa --version
-bin/fd --version
-bin/rg --version
+PKG_FOLDER=modern_unix_tool
+
+${PKG_FOLDER}/exa --version
+${PKG_FOLDER}/fd --version
+${PKG_FOLDER}/rg --version
